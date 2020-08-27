@@ -1,24 +1,22 @@
-.g{
-    padding-top: 65px;
+header ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0 30px;
 }
-.go{
-    margin-bottom: 20px;
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
 }
-.s{
-    margin-bottom: 150px;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
 }
-footer{
-    padding-top: ;
-    background-color: #dbd8d8;
-    border-top: 1px solid;
+.searchbox{
+    align-items: center;
 }
-.r1{
-   padding-left: 250px 
-}
-.rt{
-    padding-left: 500px;
-}
-.l .r1 .r2 .r3 .rt .rt1{
-    font-size: 12px;
-    outline-color: black;
+.search_icon{
+    height: 20px;
+    width: 20px;
+    color: #9aa0a6;
 }
