@@ -1,59 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="style/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type='text/css'>
+    <link href="navbar.css" rel="stylesheet" type='text/css'>
+    <link href="card.css" rel="stylesheet" type='text/css'>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="navbar-left">
-                <a href="#" class="link">About</a>
-                <a href="#" class="link">Store</a>
+    <div class="grid">
+        <nav>
+            <ul class="navbar">
+                <li class="gmail"><a href="http://gmail.com/" target="_blank">Gmail</a></li>
+                <li class="right"><a href="https://www.google.co.uk/imghp?hl=en-GB&tab=ri&authuser=0&ogbl" target="_blank">Images</a></li>
+                <li class="ga"><a href="" target="_blank"><img class="google-apps" alt="google apps" src="https://cdn.iconscout.com/icon/free/png-256/apps-1782302-1514152.png"></a></li>
+                <li class="g-icon"><a href="http://gmail.com/" target="_blank"><img class="gmail-icon" src="https://lh3.googleusercontent.com/ogw/ADGmqu_InXTB5vqqzody-7UtDrngF03Q8WbxBBbD7Hwp=s32-c-mo"></a></li>
+            </ul>
+        </nav>
+            <div class="logo">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png?fbclid=IwAR0LBl_GjLht5ERvUsFx5bfZeXpPN8pDnQ63nqLk7mzT_RUYAbjTy1-2kVI" class="logo">
             </div>
-        </div>
-        <ul>
-            <li><a href="#">gmail</a></li>
-            <li><a href="#">images</a></li>
-        </ul>
-    </header>
-    <main>
-        <div class="logo">
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png?fbclid=IwAR0LBl_GjLht5ERvUsFx5bfZeXpPN8pDnQ63nqLk7mzT_RUYAbjTy1-2kVI" class="logo">
-        </div>
-        <div class="searchbox">
-            <div class="search">
-                <span class="search_icon">
-                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-                      </svg>
-                </span>
+
+            <div class="searchbar">
+                <img class="glass" src="https://friconix.com/png/fi-xtluhl-magnifying-glass-thin.png">
+                <input type="text" placeholder="search google or type a url">
+                <img class="mic" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/microphone-1627544-1520849.png">
             </div>
-            <form class="inp">
-                <input type="text">
-            </form>
-            <div class="mic" aria-label="Search by voice">
-                <span class="mic_icon"></span>
-            </div>
-        </div>
-        <div class="boxes">
-            <a href="#">Google Search</a>
-            <a href="#">I'm feeling lucky!</a>
-        </div>
-        </main>
-        <footer>
-            <div class="left">
-                <a href="#">advertising</a>
-                <a href="#">business</a>
-                <a href="#">how search works</a>
-            </div>
-            <div class="right">
-                <a href="#">privacy</a>
-                <a href="#">terms</a>
-                <a href="#">settings</a>
-            </div>
-        </footer>
+
+            <ul class="most-frequented">
+                <li id="first"><a class="fav"><img class="IC" alt="github" src="https://img.icons8.com/nolan/2x/github.png"><p>Github</p></a></li>
+                <li id="second"><a class="fav"><img class="IC" alt="DC" src="https://img.icons8.com/cute-clipart/2x/discord-logo.png"><p>discord</p></a></li>
+                <li id="third"><a class="fav"><img class="IC" alt="YT" src="data:image/png;base64,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"><p>Youtube</p></a></li>
+                <li id="fourth"><a class="fav"><img class="IC" alt="SA" src="https://iconsplace.com/wp-content/uploads/_icons/000000/256/png/pen-icon-256.png"><p>Self-Authoring</p></a></li>
+                <li id="fifth"><a class="fav"><img class="IC" alt="PS" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/pokemon-2851195-2372677.png"><p>Pokemon showdown</p></a></li>
+                <li id="sixth"><a class="fav"><img class = "IC" alt="UD" src="https://cdn.icon-icons.com/icons2/2699/PNG/128/udemy_logo_icon_168372.png"><p>Udemy</p></a></li>
+                <li id="seventh"><a class="fav"><img class="IC" alt="RPL" src="https://sc.filehippo.net/images/t_app-logo-l,f_auto,dpr_auto/p/9268d376-04c9-5267-90af-89e62b650d30/283447807/replicon-timeattend-icon.png"><p>Repl</p></a></li>
+                <li id="eighth"><a class="fav"><img class="IC" alt="FB" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/256px-Facebook_icon.svg.png"><p>FaceBook</p></a></li>
+                <li id="ninth"><a class="fav"><img class="IC" alt="TOP" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEBIREQ8SEBUQExAXFxUYEA8VEBATFRMXFhYRFRMYHSggGBolGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGxAQGyslIB4tLy8tLS0vLS0tLSstLS0wLS0tKy0tLS0tLS0tLS0tLS0tLS0tLS0tLSsrLTctLSsrK//AABEIAIAAgAMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAUCAwYBB//EADYQAAIBAwEFBQQKAwEAAAAAAAABAgMEESEFEjFBUQZSYYGRMnGxwRMUIiMzcqHR4fFTYvAH/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACYRAQACAgEDBAIDAQAAAAAAAAABAgMRBBIxUQUhMkETYRQzQlL/2gAMAwEAAhEDEQA/APuIBgc1U2lUoVZQzvRT4Pp4GRbk3w5Jr3hfjFXJSJ+1tZbWpVee6+j/AHL2LlY8n6lWvgtVPLKEAAAAAAAAr73a1Olz3n0X7lXLy8eP9ympgtZV220KletGOcRzlpdF1KePkXzZYj6WLYq46TP26Q1lEAAAOY7TUcVFLvL9V/Zj+oU1eLeV/i23XSmTKC06vs7VlKm8tvD5m1wbTbH7s/k1iLey1LqsAAAAABTdpa8oxioyaznODP597VrERPda4tYmZ25hsyF9edmKOZSn0WPX+jR9Ppu028KnKt7RDpDWUQAAAqO0tLNLe7j+JR59N49+Fni21fXlyxjNB1HZr8N+82PT/wCuVDlfJPur6nT9qSXhz9C1kzUx/KUFcdrdoVVx2iXCEfNv5FG/qEf5hZrxfMoU9v1n3V5fyQTz8s+EscahDb9Zcd1+X8iOfljwTxqJ1v2hi9Jxx4p/IsU9Qj/UIbcWfqVrbXlOp7Mk/Dn6F3Hmpf4yr2x2r3hVdqfZh75fIpeo9qrPE7y5wyl11vZ6lu0U+88+XI2+DTWLflncm27rMuK4AAAaL6lv05x6xfrjQjzU6qTD3jt02iXBPRvwbPmPeJbHdPt9ozhT3Y/Zy3l8y1j5F606aobYq2tuUaU29W2yKZme73EaYnHQAAAyhNp5TaOxMx7w5MRPdvvNoTqQipa7vPnqSZeRa9Yi308UxVrO4QoLMkurSK8R1TEJp9od/bUtyEY91JeiPp8demsV8Ma07mZbT28gAAAA4TbdpKlWlppJ5XR5Pm+XinHknxLXwXi9IaKbyvUjr2ep7sjoAAAAABhVlhHm3Z2Ezs/aSq1oyx9mDy3yWmiLHCxTkyxP1CLkXitNfcu3PoWUAAAAABHvrOFaDjJe580+pFlw1y16bPdMk0ncOOu7KVCTg9eLT6rkYOXDOGemWnTJGSNw0Eb2AAAAABIsrB15KKeFxb6Ilw4JzW6Xi+WMcbdlaWsaUVGKwl+vib2LFXHXpqy73m87luJHkAAAAAABy3aX8VflRjc/+xocX4KuFNtN8EuLfBFXHitfsntaKsFcW/8AnX6E38ev/SP8k+Gz6HMVOLUovmiO+C1Y33h7rkifZtoWcpa8Edx8e1/dy2SIb3s3/bUm/h/tH+f9IdehKDw0VsmO1J901bRbst+zHty937lz0/5Sr8r4w6U11AAAAAAAAA53btL6SWVxWnkUebg64iY7ws8fJ0zqUS/t8W84xWXu+p46OmmoSdW7blw8LWo3hU5Z/KypFZS7h3Wx7V0qMYS441LtK6rpBadymntxxlbYV+9p/WFW+5znjwj3N0k6o6dPGp6tuuuaSnFogyUi9dJa21O2zYNLcevGX/I98PD+Om57yj5GTqtqPpflxXAAAAAAAYzeE2BRV5ZywMacsoq2jUrETuHqSzyy/U5Eb7OzOm1Q6slri8o5yeBw6MWxeCMnlrUlqs8CKYmEkTtjVnhHaxuXLTqGdtLDT9xaV17F6AegAAAAAA0XksR94FNVAjWWcz6L4nmaRPd6i0wjbNi5XM5N5UU16/0diIhzaF/6Bs26r0IfVZOM6cm2lLDkmsYydcZ9gtnXVC3f1qTc5yzhyy4rXmBJvU43Sxlb0V58TkxEuxMwk3ye9Dp8zlaxDs2mUqkenldWssxXgBuAAAAAABC2hnQCrrPRgeWsMU/zNsDTsim1KrLvNY8sgWQACs2rH7yk/Fr4ASLqnmCfdeQFIC12fnD6ATAAAAAAAa7invRaAoq8eQG6osR8vkBq2dBqGvOUn6sCUAAibRjmKfSUfiBvgsxwBqoxfAC8ow3UkBmAAAAAAABWXtDE840evmBor8APaSxFLwQGYADCtHMWB5R4ASbGh9py6fECxAAAAAAAAAaLqm2tOQFdVXIDIAAA8A8pICytoNLUDcAAAAAAAAAAaLmims41QEFoDwAB6otgTraiorhqwN4AAAAAAAAAAAAYVKSlxQESratcNfiB7StW+OnxAlU6ajwQGYAAAAAAP//Z"><p>The Odin Project</p></a></li>
+                <li id="tenth"><a class="fav"><img class="IC" alt="Add Shortcut" src="https://cdn.iconscout.com/icon/free/png-256/heavy-plus-sign-rounded-math-37968.png"><p>Add shortcut</p></a></li>
+            </ul>
+
+            <button class="customise">Customise</button>
+            <button class="Covid">Stay at home, protect the NHS.</button>
+    </div>
 </body>
 </html>

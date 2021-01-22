@@ -1,0 +1,143 @@
+.most-frequented{
+    grid-row: 10/14;
+    grid-column: 16;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#first{
+    grid-row: 1;
+    grid-column: 1;
+    height: 8em;
+    width: auto;
+    text-align: center;
+}
+
+#first:hover{
+    background-color: rgb(223, 221, 221);
+}
+
+#second{
+    grid-row: 1;
+    grid-column: 2;
+    height: 8em;
+    width: auto;
+    text-align: center;
+}
+
+#second:hover{
+    background-color: rgb(223, 221, 221);
+}
+
+
+#third{
+    height: 8em;
+    width: auto;
+    grid-row: 1;
+    grid-column: 3;
+    text-align: center;
+}
+
+#third:hover{
+    background-color: rgb(223, 221, 221);
+}
+
+#fourth{
+    height: 8em;
+    width: auto;
+    grid-row: 1;
+    grid-column: 4;
+    text-align: center;
+}
+
+#fourth:hover{
+    background-color: rgb(223, 221, 221);
+}
+
+#fifth{
+    height: 8em;
+    width: auto;
+    grid-row: 1;
+    grid-column: 5;
+    text-align: center;
+}
+
+#fifth:hover{
+    background-color: rgb(223, 221, 221);
+}
+
+
+#sixth{
+    height: 8em;
+    width: auto;
+    grid-row: 2;
+    grid-column: 1;
+    text-align: center;
+}
+
+#sixth:hover{
+    background-color: rgb(223, 221, 221);
+}
+
+#seventh{
+    height: 8em;
+    width: auto;
+    grid-row: 2;
+    grid-column: 2;
+    text-align: center;
+}
+
+#seventh:hover{
+    background-color: rgb(223, 221, 221);
+}
+
+#eighth{
+    height: 8em;
+    width: auto;
+    grid-row: 2;
+    grid-column: 3;
+    text-align: center;
+}
+
+#eighth:hover{
+    background-color: rgb(223, 221, 221);
+}
+
+#ninth{
+    height: 8em;
+    width: auto;
+    grid-row: 2;
+    grid-column: 4;
+    text-align: center;
+}
+
+#ninth:hover{
+    background-color: rgb(223, 221, 221);
+}
+
+#tenth{
+    height: 8em;
+    width: auto;
+    grid-row: 2;
+    grid-column: 5;
+    text-align: center;
+}
+
+#tenth:hover{
+    background-color: rgb(223, 221, 221);
+}
+
+p{
+    font-size: small;
+    margin: auto;
+}
+
+.IC{
+    height: 25%;
+    width: auto; 
+    margin: 2em;
+    padding: auto;
+    border-radius: 50%;
+    background-color: lightgray;
+}

@@ -1,0 +1,74 @@
+nav{
+    grid-row: 1/2;
+    grid-column: 1/31;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    grid-column: 17/18;
+    grid-row: 1/2;
+    margin: 0.5em;
+}
+
+
+.navbar{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(20, 1fr);
+}
+
+.right{
+    grid-column: 17;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+}
+
+.right:hover{
+    text-decoration: underline;
+}
+
+.gmail{
+    grid-column: 18;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+} 
+
+.gmail:hover{
+    text-decoration: underline;
+}
+
+.google-apps{
+    height: 50%;
+    width: auto;
+    margin: auto;
+    padding: 5px;
+}
+
+
+.ga{
+    grid-column: 19;
+    height: 3em;
+    width: 3em;
+    padding: 5px;
+}
+
+.ga:hover{
+    background-color: rgb(223, 221, 221);
+}
+
+.g-icon{
+    grid-column: 20;
+}
+
+.gmail-icon{
+    border-radius: 20px;
+    margin: auto;
+    padding: 5px;
+}
