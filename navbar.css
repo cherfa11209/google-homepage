@@ -17,10 +17,15 @@ li{
 
 
 .navbar{
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(20, 1fr);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     padding: 5px;
+    width: 100%;
+}
+
+nav{
+    width: 100vw;
 }
 
 .right{
@@ -72,4 +77,9 @@ li{
     border-radius: 20px;
     margin: auto;
     padding: 5px;
+}
+
+.right{
+    display: flex;
+    flex-wrap: nowrap;
 }
