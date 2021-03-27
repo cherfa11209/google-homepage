@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="style.css" rel="stylesheet" type='text/css'>
     <link href="navbar.css" rel="stylesheet" type='text/css'>
     <link href="card.css" rel="stylesheet" type='text/css'>
+
+    <link rel="stylesheet" media="screen and (min-width: 601px)" href="style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobile.css" />
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
 </head>
 <body>
+
     <div class="grid">
         <nav>
             <ul class="navbar">
-                <li class="gmail"><a href="http://gmail.com/" target="_blank">Gmail</a></li>
-                <li class="right"><a href="https://www.google.co.uk/imghp?hl=en-GB&tab=ri&authuser=0&ogbl" target="_blank">Images</a></li>
-                <li class="ga"><a href="" target="_blank"><img class="google-apps" alt="google apps" src="https://cdn.iconscout.com/icon/free/png-256/apps-1782302-1514152.png"></a></li>
-                <li class="g-icon"><a href="http://gmail.com/" target="_blank"><img class="gmail-icon" src="https://lh3.googleusercontent.com/ogw/ADGmqu_InXTB5vqqzody-7UtDrngF03Q8WbxBBbD7Hwp=s32-c-mo"></a></li>
+                <li class="gmail"><a href="http://gmail.com/" target="_blank" class="gmail-l">Gmail</a></li>
+
+                <div class="right">
+                    <li class="right-i"><a href="https://www.google.co.uk/imghp?hl=en-GB&tab=ri&authuser=0&ogbl" target="_blank">Images</a></li>
+                    <li class="ga"><a href="" target="_blank"><img class="google-apps" alt="google apps" src="https://cdn.iconscout.com/icon/free/png-256/apps-1782302-1514152.png"></a></li>
+                    <li class="g-icon"><a href="http://gmail.com/" target="_blank"><img class="gmail-icon" src="https://lh3.googleusercontent.com/ogw/ADGmqu_InXTB5vqqzody-7UtDrngF03Q8WbxBBbD7Hwp=s32-c-mo"></a></li>
+                </div>
+
             </ul>
         </nav>
+
             <div class="logo">
                 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png?fbclid=IwAR0LBl_GjLht5ERvUsFx5bfZeXpPN8pDnQ63nqLk7mzT_RUYAbjTy1-2kVI" class="logo">
             </div>
 
             <div class="searchbar">
                 <img class="glass" src="https://friconix.com/png/fi-xtluhl-magnifying-glass-thin.png">
-                <input type="text" placeholder="search google or type a url">
+                <input class="in-bar" type="text" placeholder="search google or type a url">
                 <img class="mic" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/microphone-1627544-1520849.png">
             </div>
 
@@ -42,6 +51,7 @@
             </ul>
 
             <button class="customise">Customise</button>
+            <br>
             <button class="Covid">Stay at home, protect the NHS.</button>
     </div>
 </body>
